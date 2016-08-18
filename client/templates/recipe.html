@@ -1,0 +1,20 @@
+<template name="recipe">
+    {{#with recipe}}
+        <div class="row">
+            <div class="col-xs-12" style="margin-bottom:20px;">
+                <h2>{{title}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" style="margin-bottom:20px;">
+                {{ingredients}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" style="margin-bottom:20px;">
+                {{instructions}}
+            </div>
+        </div>
+    {{/with}}
+    <a class="btn btn-default" href="/">Back</a>
+</template>

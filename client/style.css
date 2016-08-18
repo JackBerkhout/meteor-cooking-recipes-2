@@ -1,0 +1,19 @@
+body {
+    margin: 20px;
+}
+
+.list-button {
+    float: right;
+    margin-left: 10px;
+    width: 50px;
+}
+.form-button {
+    float: left;
+    margin-right: 10px;
+    width: 60px;
+}
+.s-alert-info, .s-alert-success, .s-alert-warning, .s-alert-error {
+    /*background: #bada55;  !* your background color here *!*/
+    /*color: #fff;  !* your text color here *!*/
+    border-radius: 5px;
+}
