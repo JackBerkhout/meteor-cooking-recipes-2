@@ -55,7 +55,7 @@ Template.recipeForm.helpers({
 
 Template.recipeForm.events({
   'submit #recipeForm': function(event){
-    //prevent form submission
+    // Prevent page refresh upon form submission
     event.preventDefault();
 
     //grab the form data
@@ -63,7 +63,10 @@ Template.recipeForm.events({
       title: event.target.querySelector('#title').value,
       ingredients: event.target.querySelector('#ingredients').value,
       instructions: event.target.querySelector('#instructions').value,
+      owner: Meteor.userId(),
       private: event.target.querySelector('#private').checked,
+      created: new Date(),
+      updated: new Date()
     };
 
     var recipeId = FlowRouter.getParam('id');
